@@ -1,17 +1,29 @@
+html,
 body {
+  align-items: center;
   background-color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
   width: 100%;
 }
 
 .l-main {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Jura", sans-serif;
+  justify-content: center;
 }
 
 h1 {
-  font-family: 'Jura', sans-serif;
   font-size: $size-64;
-  color: white;
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-text-stroke: 1px white;
+  color: black;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
