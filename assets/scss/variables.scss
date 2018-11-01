@@ -1,9 +1,9 @@
 // ========================
 //  Fonts
 // ========================
-$font-playfair: 'Playfair Display', serif;
+$font-playfair: "Playfair Display", serif;
 
-$font-sourcesans: 'Source Sans Pro', sans-serif;
+$font-sourcesans: "Source Sans Pro", sans-serif;
 
 // ========================
 //  Space
@@ -23,7 +23,6 @@ $space-32: 32px;
 
 $space-48: 48px;
 
-
 // ========================
 //  Sizes
 // ========================
@@ -36,12 +35,15 @@ $size-18: 18px;
 
 $size-24: 24px;
 
+$size-32: 32px;
+
 $size-36: 36px;
+
+$size-40: 40px;
 
 $size-48: 48px;
 
 $size-64: 64px;
-
 
 // ========================
 //  Widths
@@ -56,23 +58,20 @@ $color-grey: #d8d8d8;
 
 $color-dark-grey: #979797;
 
-
 // ========================
 //  Font Weights
 // ========================
 
 $weight-bold: 600;
 
-
 // ========================
 //  Breakpoints
 // ========================
 
-
 /// Reverse Small device breakpoint
 ///
 /// @type Variable
-// $breakpoint-xsmall: max-width: 575px;
+$breakpoint-xsmall: 575px;
 
 /// Small device breakpoint
 ///
@@ -94,9 +93,14 @@ $breakpoint-large: 976px;
 /// @type Variable
 $breakpoint-xlarge: 1200px;
 
-
 @mixin breakpoint($bp) {
   @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin reverse-breakpoint($bp) {
+  @media (max-width: $bp) {
     @content;
   }
 }

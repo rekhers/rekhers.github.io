@@ -18,7 +18,7 @@ body {
   justify-content: center;
 }
 
-h1 {
+.c-main__title {
   font-size: $size-64;
   text-transform: uppercase;
   cursor: pointer;
@@ -26,4 +26,16 @@ h1 {
   color: black;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
+
+  @include reverse-breakpoint($breakpoint-xsmall) {
+    font-size: $size-40;
+  }
+}
+
+.c-main__subtitle {
+  font-size: $size-32;
+
+  @include reverse-breakpoint($breakpoint-xsmall) {
+    font-size: $size-24;
+  }
 }
