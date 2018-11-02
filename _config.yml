@@ -17,9 +17,9 @@
 title: Rekha Tenjarla
 email: rekha.tenjarla@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Portfolio site
+  Portfolio for Rekha Tenjarla, Front End Developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.rekhatenjarla.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rekhatenjarla
 github_username:  rekhers
 linkedin_username: rekha-tenjarla-588a19112
