@@ -19,13 +19,13 @@ body {
 }
 
 .c-main__title {
+  color: black;
   font-size: $size-64;
   text-transform: uppercase;
-  cursor: pointer;
-  -webkit-text-stroke: 1px white;
-  color: black;
+  margin: 0;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
+  -webkit-text-stroke: 1px white;
 
   @include reverse-breakpoint($breakpoint-xsmall) {
     font-size: $size-40;
@@ -34,8 +34,31 @@ body {
 
 .c-main__subtitle {
   font-size: $size-32;
+  font-weight: 100;
+  margin: $space-16 0;
 
   @include reverse-breakpoint($breakpoint-xsmall) {
     font-size: $size-24;
+  }
+}
+
+.c-social {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.c-social__link {
+  margin: 0 $space-8;
+
+  &:hover {
+    border-bottom: 1px solid white;
   }
 }
