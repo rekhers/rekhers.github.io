@@ -1,6 +1,8 @@
 ---
 ---
-
-@import 'variables';
-@import 'base';
-@import 'layout';
+//move projects out to conditionally load
+@import "variables";
+@import "base";
+@import "layout";
+@import "projects";
+@import "footer";

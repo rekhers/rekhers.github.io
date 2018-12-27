@@ -1,11 +1,5 @@
-html,
 body {
-  height: 100%;
-}
-
-body {
-  background-color: $color-bunker;
-  margin: 0;
+  overflow: hidden;
 }
 
 .l-main {
@@ -15,13 +9,17 @@ body {
   flex-direction: column;
   font-family: $font-brown;
   font-size: $size-48;
-  height: 100%;
+  height: 90%;
   justify-content: center;
   line-height: 1.25;
   margin: $space-16;
 
   @include breakpoint($breakpoint-medium) {
     margin: $space-24;
+  }
+
+  @include breakpoint($breakpoint-large) {
+    height: 93%;
   }
 
   @include breakpoint($breakpoint-xlarge) {

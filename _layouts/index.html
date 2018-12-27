@@ -4,7 +4,9 @@
 {% include head.html %}
 
 <body>
-  <main class="l-main" aria-label="Content">
+  {% include navigation.html %}
+
+  <main class="l-main fade-in" aria-label="Content">
     <div class="c-content">
       <p>
         Hello. I'm Rekha Tenjarla, a front&nbsp;end developer living in Washington, D.C.
@@ -17,9 +19,7 @@
       </p>
     </div>
   </main>
-  <footer>
-    © Rekha Tenjarla, forever.
-  </footer>
+  {% include footer.html %}
 </body>
 </html>
 

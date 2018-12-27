@@ -1,22 +1,16 @@
----
----
-
-@import "variables";
-@import "base";
 .l-projects {
+  height: 88%;
   margin: $space-64 $space-16 0 $space-16;
   @include breakpoint($breakpoint-medium) {
     margin: $space-24;
   }
   @include breakpoint($breakpoint-large) {
+    height: 83%;
     margin: $space-48;
   }
   @include breakpoint($breakpoint-xlarge) {
-    margin: $space-64;
-  }
-  @include breakpoint(1500px) {
-    margin: $space-64 auto 0 auto;
-    max-width: 1500px;
+    margin: $space-64 auto;
+    max-width: 1200px;
   }
 }
 .c-projects__hed {
@@ -39,7 +33,6 @@
   grid-gap: $space-24;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  margin-bottom: $space-64;
   text-transform: lowercase;
   a {
     text-decoration: none;
