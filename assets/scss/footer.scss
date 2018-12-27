@@ -2,7 +2,7 @@
   color: $color-white;
   bottom: $space-32;
   font-family: $font-muli;
-  font-size: $size-16;
+  font-size: $size-12;
   font-weight: 300;
   left: $space-16;
   max-width: 380px;
@@ -10,6 +10,7 @@
 
   @include breakpoint($breakpoint-medium) {
     left: $space-24;
+    font-size: $size-14;
   }
 }
 
