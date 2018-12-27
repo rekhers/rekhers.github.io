@@ -1,0 +1,36 @@
+.c-navigation {
+  color: $color-white;
+  display: flex;
+  font-family: $font-brown;
+  font-size: $size-32;
+  justify-content: space-around;
+  margin-top: $space-16;
+  max-width: 350px;
+
+  .active {
+    text-decoration: underline;
+  }
+
+}
+
+.c-navigation__item {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .8s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
