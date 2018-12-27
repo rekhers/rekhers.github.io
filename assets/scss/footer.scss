@@ -1,6 +1,6 @@
 .c-footer {
   color: $color-white;
-  bottom: $space-32;
+  bottom: $space-48;
   font-family: $font-muli;
   font-size: $size-12;
   font-weight: 300;
@@ -9,6 +9,7 @@
   position: relative;
 
   @include breakpoint($breakpoint-medium) {
+    bottom: $space-32;
     left: $space-24;
     font-size: $size-14;
   }
