@@ -2,10 +2,10 @@
   color: $color-white;
   display: flex;
   font-family: $font-brown;
-  font-size: $size-32;
+  font-size: $size-24;
   justify-content: space-around;
   margin-top: $space-16;
-  max-width: 350px;
+  max-width: 270px;
 
   .active {
     text-decoration: underline;
