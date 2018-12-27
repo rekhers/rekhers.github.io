@@ -15,11 +15,10 @@
     font-size: $size-48;
   }
 
-  @include breakpoint($breakpoint-xlarge) {
+  @include breakpoint($breakpoint-large) {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 970px;
   }
-
   a {
     color: $color-white;
     text-decoration: underline;

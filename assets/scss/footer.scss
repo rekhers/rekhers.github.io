@@ -1,8 +1,25 @@
 .c-footer {
   color: $color-white;
-  font-family: $font-brown;
-  font-size: $size-24;
+  bottom: $space-32;
+  font-family: $font-muli;
+  font-size: $size-16;
+  font-weight: 300;
+  left: $space-16;
+  max-width: 380px;
   position: relative;
-  bottom: $space-24;
-  left: $space-24;
+
+  @include breakpoint($breakpoint-medium) {
+    left: $space-24;
+  }
+}
+
+.c-footer__social {
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: $space-8;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

@@ -1,14 +1,14 @@
 .l-projects {
-  margin: $space-64 $space-16 0 $space-16;
+  margin: $space-64 $space-16 90px $space-16;
   @include breakpoint($breakpoint-medium) {
-    margin: $space-24;
+    margin: $space-24 $space-24 90px $space-24;
   }
   @include breakpoint($breakpoint-large) {
-    margin: $space-48;
+    margin: $space-48 $space-48 90px $space-48;
     max-width: 1000px;
   }
   @include breakpoint($breakpoint-xlarge) {
-    margin: $space-64 auto;
+    margin: $space-64 auto 110px auto;
   }
 }
 .c-projects__hed {
@@ -40,7 +40,7 @@
   }
 }
 .c-project-grid__item {
-  margin-bottom: $space-16;
+  margin-bottom: $space-24;
 
   @include breakpoint($breakpoint-medium){
     margin-bottom: 0;
