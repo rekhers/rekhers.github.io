@@ -1,0 +1,65 @@
+---
+---
+
+@import "variables";
+@import "base";
+.l-projects {
+  margin: $space-64 $space-16 0 $space-16;
+  @include breakpoint($breakpoint-medium) {
+    margin: $space-24;
+  }
+  @include breakpoint($breakpoint-large) {
+    margin: $space-48;
+  }
+  @include breakpoint($breakpoint-xlarge) {
+    margin: $space-64;
+  }
+  @include breakpoint(1500px) {
+    margin: $space-64 auto 0 auto;
+    max-width: 1500px;
+  }
+}
+.c-projects__hed {
+  color: $color-white;
+  font-family: $font-brown;
+  font-size: $size-48;
+}
+.c-projects__subhed {
+  color: $color-white;
+  font-size: $size-32;
+  font-family: $font-tiempo;
+  font-weight: 300;
+  margin-bottom: $space-64;
+}
+.c-project-grid {
+  color: $color-white;
+  font-family: courier;
+  font-size: $size-24;
+  display: grid;
+  grid-gap: $space-24;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: $space-64;
+  text-transform: lowercase;
+  a {
+    text-decoration: none;
+  }
+}
+.c-project-grid__item {
+  &:hover {
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+.c-project-grid__item img {
+  width: 100%;
+}
+.c-caption__name {
+  font-style: italic;
+}
+.c-back {
+  font-size: $size-32;
+  text-decoration: none;
+}
