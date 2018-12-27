@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+  <body>
+    {% include navigation.html %}
+
+    <main class="l-projects fade-in">
+      <h1 class="c-projects__hed"> Projects </h1>
+
+      <div class="c-projects__subhed">
+        These are some recent projects I've built for work. I also worked on a <a href="https://building.theatlantic.com/automating-bagel-bliss-with-the-twilio-api-b9a8e9ae9b6f">bagel slack bot</a> to automate sending a fax with the product team's weekly bagel order.
+      </div>
+
+      <div class="c-project-grid">
+        <div class="c-project-grid__item">
+          <a href="https://theatlantic.com/year-in-review/2018">
+          <img src="assets/images/yir.png"/>
+          <div class="c-project-grid__caption">
+            <div class="c-caption__name"> Year In Review </div>
+            <div class="c-caption__org"> The Atlantic </div>
+          </div>
+          </a>
+        </div>
+        <div class="c-project-grid__item">
+          <a href="https://theatlantic.com/">
+           <img src="assets/images/homepage.png"/>
+           <div class="c-project-grid__caption">
+             <div class="c-caption__name"> Homepage </div>
+             <div class="c-caption__org"> The Atlantic </div>
+           </div>
+         </a>
+         </div>
+        <div class="c-project-grid__item">
+          <a href="https://theatlantic.com/projects/human-capital">
+           <img src="assets/images/human-capital.png"/>
+           <div class="c-project-grid__caption">
+             <div class="c-caption__name"> Human Capital </div>
+             <div class="c-caption__org"> The Atlantic </div>
+          </div>
+        </a>
+        </div>
+        <div class="c-project-grid__item">
+          <a href="https://theatlantic.com/mlk">
+            <img src="assets/images/mlk.png"/>
+            <div class="c-project-grid__caption">
+              <div class="c-caption__name"> MLK Promo </div>
+              <div class="c-caption__org"> The Atlantic </div>
+            </div>
+          </a>
+       </div>
+     </div>
+    </main>
+
+  {% include footer.html %}
+  </body>
+</html>

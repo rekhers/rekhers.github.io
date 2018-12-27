@@ -1,65 +1,46 @@
-html,
 body {
-  align-items: center;
-  background-color: black;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  margin: 0;
-  width: 100%;
+  overflow: hidden;
 }
 
 .l-main {
   align-items: center;
-  color: white;
+  color: $color-white;
   display: flex;
   flex-direction: column;
-  font-family: "Jura", sans-serif;
+  font-family: $font-brown;
+  font-size: $size-48;
+  height: 90%;
   justify-content: center;
-}
+  line-height: 1.25;
+  margin: $space-16;
 
-.c-main__title {
-  color: black;
-  font-size: $size-64;
-  text-transform: uppercase;
-  margin: 0;
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 1px 1px 0 #000;
-  -webkit-text-stroke: 1px white;
-
-  @include reverse-breakpoint($breakpoint-xsmall) {
-    font-size: $size-40;
+  @include breakpoint($breakpoint-medium) {
+    margin: $space-24;
   }
-}
 
-.c-main__subtitle {
-  font-size: $size-32;
-  font-weight: 100;
-  margin: $space-16 0;
-
-  @include reverse-breakpoint($breakpoint-xsmall) {
-    font-size: $size-24;
+  @include breakpoint($breakpoint-large) {
+    height: 93%;
   }
-}
 
-.c-social {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
+  @include breakpoint($breakpoint-xlarge) {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 
   a {
-    color: white;
-    text-decoration: none;
+    color: $color-white;
+    text-decoration: underline;
   }
 }
 
-.c-social__link {
-  border-bottom: 1px solid black;
-  margin: 0 $space-8;
-
-  &:hover {
-    border-bottom: 1px solid white;
+.c-content {
+  p:first-of-type {
+    margin-bottom: $space-8;
   }
+}
+
+.c-subintro {
+  font-size: $size-32;
+  font-family: $font-tiempo;
+  font-weight: 300;
 }
