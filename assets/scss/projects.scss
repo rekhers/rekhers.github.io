@@ -27,35 +27,40 @@
   color: $color-white;
   font-family: courier;
   font-size: $size-16;
-  text-transform: lowercase;
   a {
     text-decoration: none;
   }
 
-  @include breakpoint($breakpoint-medium) {
+  @include breakpoint($breakpoint-small) {
     display: grid;
     grid-gap: $space-24;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr auto;
   }
 }
 .c-project-grid__item {
   margin-bottom: $space-24;
 
-  @include breakpoint($breakpoint-medium){
+  @include breakpoint($breakpoint-medium) {
     margin-bottom: 0;
+    align-self: center;
   }
 
   &:hover {
     a {
-      font-weight: bold;
       text-decoration: underline;
     }
   }
 }
 .c-project-grid__item img {
   width: 100%;
+  height: 200px;
+
+  @include breakpoint($breakpoint-small) {
+    max-width: 400px;
+  }
 }
 .c-caption__name {
-  font-style: italic;
+  font-size: 18px;
+  margin-top: $space-4;
 }
