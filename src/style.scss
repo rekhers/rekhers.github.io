@@ -41,11 +41,18 @@ h4 {
   div {
     margin-top: 8px;
     width: fit-content;
+    font-family: "Raleway";
+    letter-spacing: 0.1rem;
   }
 
   &:hover {
     div {
-      font-weight: bold;
+      color: white;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-thickness: 1px;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 3px;
     }
   }
 }
