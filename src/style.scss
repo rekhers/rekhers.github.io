@@ -19,8 +19,6 @@ a:hover {
   max-width: 750px;
   width: 100%;
   margin: 64px auto 64px auto;
-  //   display: flex;
-  //   flex-direction: column;
 }
 
 h4 {
@@ -30,18 +28,14 @@ h4 {
   font-weight: 300;
 }
 
-div.project:nth-child(even) {
-  margin-left: 128px;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project {
   margin: 24px 0;
-  //   letter-spacing: 0.4rem;
   text-transform: lowercase;
   font-weight: 100;
 }
