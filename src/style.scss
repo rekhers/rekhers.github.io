@@ -38,6 +38,16 @@ h4 {
   margin: 24px 0;
   text-transform: lowercase;
   font-weight: 100;
+  div {
+    margin-top: 8px;
+    width: fit-content;
+  }
+
+  &:hover {
+    div {
+      font-weight: bold;
+    }
+  }
 }
 
 .project-image {
