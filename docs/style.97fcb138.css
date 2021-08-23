@@ -29,20 +29,33 @@ h4 {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-self: center;
+}
+@media only screen and (min-width: 600px) {
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .project {
   margin: 24px 0;
   text-transform: lowercase;
   font-weight: 100;
+  text-align: center;
 }
 .project div {
+  text-align: center;
   margin-top: 8px;
-  width: fit-content;
   font-family: "Raleway";
   letter-spacing: 0.1rem;
+}
+@media only screen and (min-width: 600px) {
+  .project div {
+    width: fit-content;
+  }
 }
 .project:hover div {
   color: white;
