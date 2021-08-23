@@ -22,9 +22,16 @@ a:hover {
 
 h4 {
   letter-spacing: 0.2rem;
-  font-size: 24px;
+  font-size: 20px;
+  padding: 0 32px;
   align-self: center;
   font-weight: 300;
+}
+@media only screen and (min-width: 600px) {
+  h4 {
+    font-size: 24px;
+    padding: unset;
+  }
 }
 
 .projects {
@@ -64,6 +71,7 @@ h4 {
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
   text-underline-offset: 3px;
+  cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
 }
 
 .project-image {
